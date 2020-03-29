@@ -16,9 +16,13 @@ public class AppleSortMain {
         List<Apple> inventory = Arrays.asList(Apple.builder().weight(6).build(), Apple.builder().weight(10).build(), Apple.builder().weight(8).build());
         inventory.sort(new AppleComparator());
 
-        // 一行 lambda 表达式解决问题
+        // 一行 lambda 表达式解决问题 升序
         inventory.sort(Comparator.comparing(Apple::getWeight));
 
+        System.out.println(inventory);
+
+        // 逆序
+        inventory.sort(Comparator.comparing(Apple::getWeight).reversed());
         System.out.println(inventory);
     }
 }
