@@ -1,4 +1,4 @@
-package com.sdy;
+package com.sdy.jdbc;
 
 import javax.sql.DataSource;
 import java.io.PrintWriter;

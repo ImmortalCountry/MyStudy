@@ -1,4 +1,7 @@
-package com.sdy.Class;
+package com.sdy.vo;
+
+import lombok.Builder;
+import lombok.Data;
 
 /**
  * @author: sundy
@@ -6,6 +9,7 @@ package com.sdy.Class;
  * @description: 苹果类
  */
 @Data
+@Builder
 public class Apple {
-    private
+    private Integer weight;
 }
