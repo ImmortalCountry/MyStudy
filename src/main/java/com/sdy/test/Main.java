@@ -1,5 +1,6 @@
 package com.sdy.test;
 
+import com.sdy.callBack.BookCallBack;
 import com.sdy.callBack.ICallBack;
 import org.junit.Test;
 
@@ -19,6 +20,8 @@ public class Main {
                 System.out.println("Anonymous Inner Class");
             }
         });
+        BookCallBack bookCallBack = new BookCallBack();
+        testBookCallBack.test(bookCallBack);
     }
 
 }
