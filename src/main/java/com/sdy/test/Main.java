@@ -13,15 +13,15 @@ public class Main {
 
     @Test
     public void main(){
-        TestBookCallBack testBookCallBack = new TestBookCallBack();
-        testBookCallBack.test(new ICallBack() {
-            @Override
-            public void execute() {
-                System.out.println("Anonymous Inner Class");
-            }
-        });
-        BookCallBack bookCallBack = new BookCallBack();
-        testBookCallBack.test(bookCallBack);
+//        TestBookCallBack testBookCallBack = new TestBookCallBack();
+//        testBookCallBack.test(new ICallBack() {
+//            @Override
+//            public void execute() {
+//                System.out.println("Anonymous Inner Class");
+//            }
+//        });
+//        BookCallBack bookCallBack = new BookCallBack();
+//        testBookCallBack.test(bookCallBack);
     }
 
 }
