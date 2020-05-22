@@ -61,7 +61,7 @@ public class TimeTask {
             }
         };
         ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
-//        service.scheduleAtFixedRate(runnable, 3, 1, TimeUnit.SECONDS);
-        service.schedule(runnable, 2, TimeUnit.SECONDS);
+        service.scheduleAtFixedRate(runnable, 3, 1, TimeUnit.SECONDS);
+//        service.schedule(runnable, 2, TimeUnit.SECONDS);
     }
 }

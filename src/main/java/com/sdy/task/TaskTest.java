@@ -9,6 +9,6 @@ public class TaskTest {
     public static void main(String[] args) {
 //        TimeTask.task1();
 //        TimeTask.task2();
-//        TimeTask.task3();
+        TimeTask.task3();
     }
 }
