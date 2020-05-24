@@ -2,6 +2,7 @@ package com.sdy.thread;
 
 /**
  * CAS
+ * @author 18846
  */
 public class CAS {
     public static volatile int race = 0;
