@@ -1,4 +1,4 @@
-package com.sdy.design;
+package com.sdy.design.eventbus;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
