@@ -65,7 +65,7 @@ public class ObserverRegistry {
         for (Map.Entry<Class<?>, CopyOnWriteArraySet<ObserverAction>> entry : registry.entrySet()) {
             Class<?> eventType = entry.getKey();
             Collection<ObserverAction> eventActions = entry.getValue();
-            if (postedEventType.isAssignableFrom(eventType)){
+            if (eventType.isAssignableFrom(postedEventType)){
                 matchedObservers.addAll(eventActions);
             }
         }
