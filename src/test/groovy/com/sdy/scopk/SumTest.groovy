@@ -48,7 +48,7 @@ class SumTest extends Specification {
         2     | 2       | 4
         0     | 0       | 0
         -1    | 2       | 1
-        where:
+/*        where:
         a | _
         3 | _
         7 | _
@@ -56,6 +56,6 @@ class SumTest extends Specification {
 
         b << [5, 0, 0]
 
-        c = a > b ? a : b
+        c = a > b ? a : b*/
     }
 }
