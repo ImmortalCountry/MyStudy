@@ -7,6 +7,6 @@ package com.sdy.git;
  */
 public class GitTest {
     public static void main(String[] args) {
-        System.out.println("我是 merge2");
+        System.out.println("我是主分支");
     }
 }
