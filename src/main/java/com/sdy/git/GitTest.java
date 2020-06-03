@@ -8,5 +8,6 @@ package com.sdy.git;
 public class GitTest {
     public static void main(String[] args) {
         System.out.println("重构");
+        System.out.println("重构开发");
     }
 }
