@@ -7,8 +7,7 @@ package com.sdy.git;
  */
 public class GitTest {
     public static void main(String[] args) {
-        System.out.println("我是 test");
-        System.out.println("test分支新增");
-        System.out.println("修复bug");
+        System.out.println("重构");
+        System.out.println("重构开发");
     }
 }
