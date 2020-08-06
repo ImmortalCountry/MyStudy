@@ -7,9 +7,10 @@ package com.sdy.test;
  */
 public class Test {
     public static void main(String[] args) {
-        int i = 1000;
-        for (int j = 0; j < i; j++) {
-            System.out.println(j);
-        }
+        String str = "";
+        StringBuffer sb = new StringBuffer();
+        StringBuilder sbr = new StringBuilder();
+        System.out.println(2.0/0);
+
     }
 }
