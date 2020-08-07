@@ -7,12 +7,6 @@ package com.sdy.others;
  */
 public class Test {
     public static void main(String[] args) {
-        try {
-            Class<?> aClass = Class.forName("com.sdy.others.AnnotationTest");
-            MyTest annotation = aClass.getAnnotation(MyTest.class);
-            System.out.println(annotation.annotationType());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        PeopleAnnotationUtil.getFruitInfo(People.class);
     }
 }
