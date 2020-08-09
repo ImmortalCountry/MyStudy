@@ -1,10 +1,7 @@
-package com.sdy.io.fileIo;
-
-import org.apache.commons.io.IOUtils;
+package com.sdy.io.fileio;
 
 import java.io.*;
 import java.net.URL;
-import java.nio.charset.StandardCharsets;
 
 /**
  * @author: SunDeYu
