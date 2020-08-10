@@ -17,20 +17,21 @@ public class Test {
 //        StringBuffer sb = new StringBuffer();
 //        StringBuilder sbr = new StringBuilder();
 //        System.out.println(2.0/0);
-
-        List<T> list = new ArrayList<>(20);
-
-        for (int i = 0; i < 20; i++){
-            if (i == 10){
-                list.add(new T(null));
-                continue;
-            }
-            list.add(new T(i+""));
-        }
-
-        list.forEach(t->{
-            System.out.println(t.getName().toString());
-        });
+//
+//        List<T> list = new ArrayList<>(20);
+//
+//        for (int i = 0; i < 20; i++){
+//            if (i == 10){
+//                list.add(new T(null));
+//                continue;
+//            }
+//            list.add(new T(i+""));
+//        }
+//
+//        list.forEach(t->{
+//            System.out.println(t.getName().toString());
+//        });
+        Long.valueOf(null);
 
     }
     @Data
