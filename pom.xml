@@ -54,6 +54,11 @@
             <version>2.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>4.2.1.RELEASE</version>
+        </dependency>
 
         <dependency>
 <!--            slf4j 日志门面-->
