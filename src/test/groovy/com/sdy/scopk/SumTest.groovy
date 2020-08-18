@@ -42,7 +42,7 @@ class SumTest extends Specification {
         expect:
         sum.exector(first, sencond) == result
         print(a)
-        where:
+        where:2
         first | sencond | result
         1     | 1       | 2
         2     | 2       | 4

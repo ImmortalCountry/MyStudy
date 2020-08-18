@@ -36,10 +36,7 @@ public class TestStream {
         }).start();
         System.out.println("begin " + new Date());
         list.parallelStream().forEach(t->{
-
                 count.incrementAndGet();
-
-
         });
         System.out.println("end " + new Date());
         System.out.println("count = " + count.get());

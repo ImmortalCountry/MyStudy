@@ -2,7 +2,6 @@ package com.sdy.log.jul;
 
 import org.junit.Test;
 
-import java.io.Console;
 import java.io.IOException;
 import java.util.logging.*;
 
