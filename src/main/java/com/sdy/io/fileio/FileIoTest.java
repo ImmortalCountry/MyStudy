@@ -19,7 +19,6 @@ public class FileIoTest {
 
 //        bytesFileTest(readerPath, writePath);
         characterFileTest();
-
     }
 
     private static void characterFileTest() throws IOException {
@@ -28,7 +27,6 @@ public class FileIoTest {
         characterRead();
 
     }
-
     private static void characterRead() throws IOException {
         FileReader in = new FileReader(new File("character.txt"));
         BufferedReader reader = new BufferedReader(in);

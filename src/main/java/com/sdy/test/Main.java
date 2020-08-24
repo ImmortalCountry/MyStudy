@@ -5,7 +5,9 @@ import com.sdy.callBack.BookCallBack;
 import com.sdy.callBack.ICallBack;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author: sundy
@@ -25,14 +27,27 @@ public class Main {
 //        });
 //        BookCallBack bookCallBack = new BookCallBack();
 //        testBookCallBack.test(bookCallBack);
-        List<String> tentands = Lists.newArrayList("1","2","3","4","5","6");
-        List<String> re = Lists.newArrayList("2","4","6");
-        tentands.parallelStream().forEach(t->{
-            if (re.contains(t)){
-                return;
-            }
-            System.out.println(t);
-        });
+//        List<String> tentands = Lists.newArrayList("1","2","3","4","5","6");
+//        List<String> re = Lists.newArrayList("2","4","6");
+//        tentands.parallelStream().forEach(t->{
+//            if (re.contains(t)){
+//                return;
+//            }
+//            System.out.println(t);
+//        });
+//        if(T1.isTrue()){
+//            System.out.println("ok");
+//        }
+
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        List<String> collect = list.stream().filter(x -> x.equals("1")).collect(Collectors.toList());
+        collect.set(0, "6");
+        System.out.println(collect);
+        System.out.println(list);
+
 
     }
 
