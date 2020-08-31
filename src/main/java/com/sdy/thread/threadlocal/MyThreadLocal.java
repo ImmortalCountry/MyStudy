@@ -10,7 +10,7 @@ import java.util.stream.IntStream;
  * @description:
  */
 public class MyThreadLocal {
-    public static void main(String[] args) {
+    public static void main(String[]  args) {
         ThreadLocal<String> threadLocal = new ThreadLocal<>();
         Random random = new Random();
         IntStream.range(0, 5).forEach(a -> new Thread(() -> {
@@ -24,3 +24,4 @@ public class MyThreadLocal {
         }).start());
     }
 }
+// Sonar
