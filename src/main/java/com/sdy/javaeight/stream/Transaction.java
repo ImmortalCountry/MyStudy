@@ -1,4 +1,4 @@
-package com.sdy.stream;
+package com.sdy.javaeight.stream;
 
 import lombok.Data;
 

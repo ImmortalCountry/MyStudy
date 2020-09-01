@@ -1,8 +1,6 @@
-package com.sdy.stream;
+package com.sdy.javaeight.stream;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 /**
  * @author: sundy
