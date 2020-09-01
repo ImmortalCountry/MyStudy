@@ -9,7 +9,7 @@ package com.sdy.test;
  * 3. 最后执行 finally 语句
  * 4. 出现一场 try 中的 return 不生效。
  * 5. catch 中没有返回语句需要在方法最后加返回值。且 catch 不返回则继续执行 try catch 后的语句。
- * 6. try 中的 return 不起作用。
+ * 6. try 中的 return 不起作用。m
  * 7. return 只执行一次，且 try 中
  * 8. 若发生异常，try 中 return 不生效，也不执行。
  * 9. 若 try 中无异常，那么若 try 中有返回值，返回 try 的返回值。
