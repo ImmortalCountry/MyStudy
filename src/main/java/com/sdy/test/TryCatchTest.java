@@ -13,6 +13,7 @@ package com.sdy.test;
  * 7. return 只执行一次，且 try 中
  * 8. 若发生异常，try 中 return 不生效，也不执行。
  * 9. 若 try 中无异常，那么若 try 中有返回值，返回 try 的返回值。
+ * 10. try 中有异常才会走下边的逻辑(try catch 外面的语句,因为无异常 try 块中已经 return 了)
  */
 public class TryCatchTest {
     public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class TryCatchTest {
         String number  = "0" ;
         try {
             System.out.println("我进入 try 语句啦！");
-//            int a = 10/0;
+            int a = 10/0;
             System.out.println("我执行完 try 语句啦！");
             return "来自 try 代码块";
 //            return String.valueOf(Integer.parseInt(number)+1);
@@ -39,7 +40,7 @@ public class TryCatchTest {
 //            return "来自 finally 代码块";
 //        return String.valueOf(Integer.parseInt(number)+1);
         }
-//        System.out.println("我在 try catch 外面啦！");
+        System.out.println("我在 try catch 外面啦！");
 //        return "我来自 test";
         return String.valueOf(Integer.parseInt(number)+1);
     }
