@@ -13,7 +13,14 @@ import java.util.List;
  */
 public class Test {
     public static void main(String[] args) {
-//        String str = "";
+        B b = new B("b");
+        A a = new A(b);
+        System.out.println(a);
+        b.setName("c");
+        System.out.println(a);
+
+
+//        String str = "";k
 //        StringBuffer sb = new StringBuffer();
 //        StringBuilder sbr = new StringBuilder();
 //        System.out.println(2.0/0);
@@ -31,12 +38,18 @@ public class Test {
 //        list.forEach(t->{
 //            System.out.println(t.getName().toString());
 //        });
-        Long.valueOf(null);
+//        Long.valueOf(null);
 
     }
     @Data
     @AllArgsConstructor
-    public static class T {
+    public static class A {
+        B b;
+    }
+
+    @Data
+    @AllArgsConstructor
+    public static class B {
         String name;
     }
 }
