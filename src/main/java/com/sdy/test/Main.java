@@ -88,11 +88,12 @@ public class Main {
 //
 //        });
 
-        ConcurrentHashMap<Object, Object> map = new ConcurrentHashMap<>();
-        ConcurrentHashMap<Object, Object> map1 = new ConcurrentHashMap<>(2);
-        map.put("key", "vaule");
-        map.get("key");
-        System.out.println(this.getClass());
+//        ConcurrentHashMap<Object, Object> map = new ConcurrentHashMap<>();
+//        ConcurrentHashMap<Object, Object> map1 = new ConcurrentHashMap<>(2);
+//        map.put("key", "vaule");
+//        map.get("key");
+//        System.out.println(this.getClass());
+        Integer.parseInt("12-2");
     }
 
 }
