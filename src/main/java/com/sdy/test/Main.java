@@ -8,6 +8,8 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Vector;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 /**
@@ -19,14 +21,16 @@ public class Main {
 
     @Test
     public void main(){
-        HashMap<Object, Object> map = new HashMap<>();
-        map.put(1,"1");
-        Object o = map.get(1);
 
-        System.out.println(o);
-        System.out.println(o.equals("1"));
-        ThreadLocal<Object> local = new ThreadLocal<>();
-        Thread thread = new Thread();
+//        System.out.println(Long.valueOf("300007867 "));
+//        HashMap<Object, Object> map = new HashMap<>();
+//        map.put(1,"1");
+//        Object o = map.get(1);
+//
+//        System.out.println(o);
+//        System.out.println("1".equals(o));
+//        ThreadLocal<Object> local = new ThreadLocal<>();
+//        Thread thread = new Thread();
 
 //        TestBookCallBack testBookCallBack = new TestBookCallBack();
 //        testBookCallBack.test(new ICallBack() {
@@ -46,7 +50,7 @@ public class Main {
 //            }
 //            System.out.println(t);
 //        });
-//        if(T1.isTrue()){
+//        if(T1.isTrue()){researchDevelopmentCenter
 //            System.out.println("ok");
 //        }
 
@@ -58,8 +62,37 @@ public class Main {
 //        collect.set(0, "6");
 //        System.out.println(collect);
 //        System.out.println(list);
+//        ArrayList<String> array = new ArrayList<>();
+//        ArrayList<String> array1 = new ArrayList<>(2);
+//        array1.set(0, "1");
+//        array1.add("1");
+//        array1.add(1,"2");
+//        array1.get(1);objectDataId
+//        array.add("2");
+//        array1.add("1");
+//        array1.remove(1);
+//        array1.remove("1");
 
+//        Vector<Integer> vector = new Vector<>();
+//        vector.add(1);
+//        vector.get(1);
+//        Vector<Integer> vector1 = new Vector<>(2);
+//        HashMap<String, Integer> hashMap = new HashMap<>();
+////        HashMap<String, Integer> hashMap1 = new HashMap<>(2);
+//        hashMap.put("key", 1);
+//        System.out.println(hashMap.get("1"));
+//        hashMap.remove("key");
+//
+//        List<Integer> list = new ArrayList<>();
+//        list.forEach(x->{d
+//
+//        });
 
+        ConcurrentHashMap<Object, Object> map = new ConcurrentHashMap<>();
+        ConcurrentHashMap<Object, Object> map1 = new ConcurrentHashMap<>(2);
+        map.put("key", "vaule");
+        map.get("key");
+        System.out.println(this.getClass());
     }
 
 }

@@ -12,14 +12,33 @@ import java.util.List;
  * @description:
  */
 public class Test {
+
+
+
+
+    private static int count = 0;
     public static void main(String[] args) {
-        B b = new B("b");
-        A a = new A(b);
-        System.out.println(a);
-        b.setName("c");
-        System.out.println(a);
+//        B b = new B("b");
+//        A a = new A(b);
+//        System.out.println(a);
+//        b.setName("c");
+//        System.out.println(a);
 
 
+//        for (String arg : args) {
+//            System.out.println("arg:" + arg);
+//        }
+//
+//        System.out.println("-Xmx" + Runtime.getRuntime().maxMemory() / 1024 / 1024 + "M");
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        try{
+            recursion();
+        }catch (Throwable e){
+            System.out.println("deep of calling = " + count);
+            e.printStackTrace();
+        }
 //        String str = "";k
 //        StringBuffer sb = new StringBuffer();
 //        StringBuilder sbr = new StringBuilder();
@@ -41,6 +60,12 @@ public class Test {
 //        Long.valueOf(null);
 
     }
+
+    private static void recursion() {
+        count++;
+        recursion();
+    }
+
     @Data
     @AllArgsConstructor
     public static class A {

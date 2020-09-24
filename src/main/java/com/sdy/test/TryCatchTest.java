@@ -24,30 +24,34 @@ public class TryCatchTest {
 
 
     private static void test() {
-        String number  = "0" ;
-        try {
-            System.out.println("我进入 try 语句啦！");
-            int a = 10/0;
-            System.out.println("我执行完 try 语句啦！");
-//            return "来自 try 代码块";
-//            return String.valueOf(Integer.parseInt(number)+1);
-        }
-        catch (Exception e){
-            System.out.println("我进入 catch 语句啦！");
-            e.printStackTrace();
-            System.out.println("我进入 catch 语句啦2！");
 
-//            return "来自 catch 代码块";
-//            return String.valueOf(Integer.parseInt(number)+1);
+        while(true){
+
         }
-        finally {
-            System.out.println("我进入 finally 语句啦！");
-//            return "来自 finally 代码块";
-//        return String.valueOf(Integer.parseInt(number)+1);
-        }
-        System.out.println("我在 try catch 外面啦！");
-//        return "我来自 test";
-//        return String.valueOf(Integer.parseInt(number)+1);
+//        String number  = "0" ;
+//        try {
+//            System.out.println("我进入 try 语句啦！");
+//            int a = 10/0;
+//            System.out.println("我执行完 try 语句啦！");
+////            return "来自 try 代码块";
+////            return String.valueOf(Integer.parseInt(number)+1);
+//        }
+//        catch (Exception e){
+//            System.out.println("我进入 catch 语句啦！");
+//            e.printStackTrace();
+//            System.out.println("我进入 catch 语句啦2！");
+//
+////            return "来自 catch 代码块";
+////            return String.valueOf(Integer.parseInt(number)+1);
+//        }
+//        finally {
+//            System.out.println("我进入 finally 语句啦！");
+////            return "来自 finally 代码块";
+////        return String.valueOf(Integer.parseInt(number)+1);
+//        }
+//        System.out.println("我在 try catch 外面啦！");
+////        return "我来自 test";
+////        return String.valueOf(Integer.parseInt(number)+1);
     }
 
 }
