@@ -1,5 +1,6 @@
 package com.sdy.locks;
 
+import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
 /**
@@ -8,4 +9,7 @@ import java.util.concurrent.locks.AbstractQueuedSynchronizer;
  * @description:
  */
 public class MyLock extends AbstractQueuedSynchronizer {
+    public static void main(String[] args) {
+        CyclicBarrier c = new CyclicBarrier(1);
+    }
 }
