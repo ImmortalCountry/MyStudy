@@ -11,12 +11,12 @@ import java.util.stream.IntStream;
 /**
  * @author: sundy
  * @date: 2020/9/29 19:58
- * @description:
+ * @description: 读多写少的时候用，因为写的时候会复制一份
  */
 public class CopyOnWriteTest {
     public static void main(String[] args) {
-//        System.out.println(testWrite());
-        System.out.println(testRead());
+        System.out.println(testWrite());
+//        System.out.println(testRead());
     }
 
     private static Map testWrite() {
@@ -31,7 +31,7 @@ public class CopyOnWriteTest {
         IntStream.rangeClosed(1, lopCount).parallel().forEach(__ -> synchronizedList.add(ThreadLocalRandom.current().nextInt(lopCount)));
         stopWatch.stop();
         System.out.println(stopWatch.prettyPrint());
-        Map result = new HashMap();
+        Map result = new HashMap<>();
         result.put("copyOnWrite", copyOnWrite.size());
         result.put("synchronizedList", synchronizedList.size());
         return result;
@@ -59,7 +59,7 @@ public class CopyOnWriteTest {
         IntStream.rangeClosed(1, loopCount).parallel().forEach(__ -> synchronizedList.get(ThreadLocalRandom.current().nextInt(count)));
         stopWatch.stop();
         System.out.println(stopWatch.prettyPrint());
-        Map result = new HashMap();
+        Map result = new HashMap<>();
         result.put("copyOnWriteList", copyOnWriteList.size());
         result.put("synchronizedList", synchronizedList.size());
         return result;
