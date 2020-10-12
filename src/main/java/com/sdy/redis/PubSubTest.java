@@ -35,12 +35,6 @@ public class PubSubTest extends JedisPubSub {
             }
         }).start();
 
-
-
-
-
-
-
         new Thread(new Runnable() {
             @Override
             public void run() {

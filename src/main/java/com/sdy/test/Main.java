@@ -93,7 +93,15 @@ public class Main {
 //        map.put("key", "vaule");
 //        map.get("key");
 //        System.out.println(this.getClass());
-        Integer.parseInt("12-2");
+//        Integer.parseInt("12-2");
+//        System.out.println(7.0/10);
+//        int t1 = 100000;
+//        int t2 = 100000;
+//        System.out.println(t1 * t2);
+//        System.out.println(t1 * t2 / 1000000);
+//        System.out.println(10 1);
+
     }
+
 
 }
