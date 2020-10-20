@@ -40,6 +40,7 @@ public class GenericTest<T> {
         for (E e : inputArray) {
             System.out.println(e);
         }
+
     }
 
 }

@@ -12,9 +12,9 @@ import java.util.logging.Logger;
  */
 public class LogTest {
 
-    private static Log logCommon = LogFactory.getLog(LogTest.class);
+        private static Log logCommon = LogFactory.getLog(LogTest.class);
     // 实例中使用
-    // protected final Log log = LogFactory.getLog(getClass());
+    // protected final log log = logfactory.getlog(getclass());
 
     public static void main(String[] args) {
 

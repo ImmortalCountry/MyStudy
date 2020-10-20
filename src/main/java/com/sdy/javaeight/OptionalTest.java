@@ -13,20 +13,12 @@ import java.util.Optional;
  */
 public class OptionalTest {
     public static void main(String[] args) {
-        User user = new User("张三", "20");
-        Optional<User> userOptional = Optional.ofNullable(user);
-        userOptional.ifPresent(System.out::println);
-        User user1 = new User("李四", "20");
-        System.out.println(Optional.ofNullable(null).orElse(user1));
-    }
+        Optional<User> optionalUser = Optional.empty();
+//
+        User user = User.builder().name("小明").age("18").build();
+        User userNull = User.builder().name("小红").age("28").build();;
+        System.out.println(Optional.ofNullable(userNull).orElse(user).getName());
 
-
-    @Data
-    @AllArgsConstructor
-    @Builder
-    static class User {
-        private String name;
-        private String age;
     }
 }
 
