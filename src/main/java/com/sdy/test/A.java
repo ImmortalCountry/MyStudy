@@ -6,7 +6,5 @@ package com.sdy.test;
  * @description:
  */
 public class A {
-    public static String getA(){
-        return "a";
-    }
+    String y = "a";
 }

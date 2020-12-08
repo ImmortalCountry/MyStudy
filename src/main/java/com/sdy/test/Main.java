@@ -1,16 +1,13 @@
 package com.sdy.test;
 
 import com.google.common.collect.Lists;
-import com.google.gson.Gson;
+import com.sdy.javaeight.User;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.util.StopWatch;
+import org.springframework.util.CollectionUtils;
 
-import java.lang.reflect.Array;
-import java.nio.charset.Charset;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -32,7 +29,7 @@ public class Main {
 //        Object o = map.get(1);
 //
 //        System.out.println(o);
-//        System.out.println("1".equals(o));
+//        System.out.prjiintln("1".equals(o));
 //        ThreadLocal<Object> local = new ThreadLocal<>();
 //        Thread thread = new Thread();
 
@@ -197,14 +194,111 @@ public class Main {
 //        if (s){
 //            System.out.println("ok");
 //        }
-        do{
-            System.out.println("k");
-        }while (false);
+
+
 //        String json = "[{\"ext\":\"png\",\"path\":\"N_202009_27_81457af1ff6c47ea9758457969fe9d9e.png\",\"filename\":\"Screenshot_2020-09-27-11-05-26-375_io.dcloud.UNI3BFFF09.png\",\"create_time\":1601176013235,\"size\":522820}]";
 //        Gson gson = new Gson();
 //        final List map = (List<Map>)gson.fromJson(json, List.class);
 //        System.out.println(map);
-//        System.out.println(gson.toJson(map));
+//        System.out.println(gson.toJson(map))
+
+//        URL[] urLs = Launcher.getBootstrapClassPath().getURLs();
+//        for (URL urL : urLs) {
+//            System.out.println(urL);
+//        }
+//        System.out.println("------- extClassLoader");
+//        URLClassLoader extClassLoader = (URLClassLoader) Thread.currentThread().getContextClassLoader().getParent();
+//        URL[] extUrls = extClassLoader.getURLs();
+//        for (URL extUrl : extUrls) {
+//            System.out.println(extUrl);
+//        }
+//
+//        System.out.println("------- appClassLoader");
+//        URLClassLoader appClassLoader = (URLClassLoader) Thread.c urrentThread().getContextClassLoader();
+//        URL[] appUrls = appClassLoader.getURLs();
+//        for (URL appUrl : appUrls) {
+//            System.out.println(appUrl);
+//        }
+
+//        List<User> trees = new ArrayList<>();
+//        trees.add(new User("u1", "1", ""));
+//        trees.add(new User("u2", "2", "1"));
+//        trees.add(new User("u3", "3", "1"));
+//        trees.add(new User("u4", "4", "2"));
+//        trees.add(new User("u5", "5", "2"));
+//        trees.add(new User("u6", "6", "2"));
+//        User root = new User("u1", "1", "");
+//        buildTree(root, trees);
+////        List<User> list = bfs(root.getChildren());
+//        Map<User, Integer> depthMap = Maps.newHashMap();
+//        getDepth(root, 0, depthMap);
+//
+//        A a = new A();
+//        B b = new B();
+//        Integer.valueOf(null);
+//        String ABc;
+//        String abc;
+//        String str = "10,78060:20|78532:30";
+//        String[] groups = str.split("\\|");
+//        for (String group : groups) {
+//            String[] kv = group.split(":");
+//            List<String> tenantIds = Arrays.asList(kv[0].split(","));
+//        }
+        List<String> list = new ArrayList<>();
+        List<String> collect = list.stream().collect(Collectors.toList());
+        System.out.println(collect);
+    }
+
+    public static void getDepth(User tree, int depth, Map<User, Integer> map) {
+        List<User> children = tree.getChildren();
+        if (CollectionUtils.isEmpty(children)) {
+            map.put(tree, depth);
+            return;
+        }
+        for (User child : children) {
+            getDepth(child, depth + 1, map);
+        }
+    }
+
+    public List<User> bfs(List<User> children) {
+        List<User> allChildren = new ArrayList<>();
+        List<User> result = Lists.newArrayList();
+        List<User> result2 = Lists.newArrayList();
+        for (User child : children) {
+            System.out.println(child.getName());
+            result.add(child);
+            List<User> childrenList = child.getChildren();
+            if (!CollectionUtils.isEmpty(childrenList)) {
+                allChildren.addAll(childrenList);
+            }
+        }
+        if (!CollectionUtils.isEmpty(allChildren)) {
+            bfs(allChildren).addAll(result2);
+        }
+        return result;
+    }
+
+    public static void buildTree(User node, List<User> trees) {
+        List<User> children = trees.stream().filter(x -> x.getPage().equals(node.getAge())).collect(Collectors.toList());
+        if (!CollectionUtils.isEmpty(children)) {
+            for (User child : children) {
+                buildTree(child, trees);
+            }
+            node.setChildren(children);
+        }
+
+
+//        Map<String, Long> collect = users
+//                .stream()
+//                .map(User::getName)
+//                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+//        List<String> result = new ArrayList<>();
+//        collect.forEach((k,v)->{
+//            if(v>1){
+//                result.add(k);
+//            }
+//        });
+//        System.out.println(result.toString());
 
     }
 

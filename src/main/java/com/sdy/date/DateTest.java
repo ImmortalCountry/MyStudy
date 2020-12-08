@@ -36,6 +36,7 @@ public class DateTest {
         System.out.println(timeZoneSH.getId() + outputFormat.withZone(timeZoneSH).format(date));
         System.out.println(timeZoneNY.getId() + outputFormat.withZone(timeZoneNY).format(date));
         System.out.println(timeZoneJST.getId() + outputFormat.withZone(timeZoneJST).format(date));
+        
     }
 
     public static void test1() {
