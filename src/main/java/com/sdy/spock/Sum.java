@@ -1,4 +1,4 @@
-package com.sdy.scopk;
+package com.sdy.spock;
 
 /**
  * @author: Sun Deyu

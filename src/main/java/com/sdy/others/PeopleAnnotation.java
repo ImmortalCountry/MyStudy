@@ -13,5 +13,3 @@ import java.lang.annotation.*;
 public @interface PeopleAnnotation {
     String value() default "默认值";
 }
-
-

@@ -6,8 +6,6 @@ package com.sdy.test
  */
 class tt {
     static void main(String[] args) {
-        if (-2){
-            print("yes")
-        }
+
     }
 }
