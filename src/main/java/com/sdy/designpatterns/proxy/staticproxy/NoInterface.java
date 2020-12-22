@@ -6,7 +6,7 @@ package com.sdy.designpatterns.proxy.staticproxy;
  * @description:
  */
 public class NoInterface {
-    void print(){
+    public void print() {
         System.out.println("我没有接口");
     }
 }

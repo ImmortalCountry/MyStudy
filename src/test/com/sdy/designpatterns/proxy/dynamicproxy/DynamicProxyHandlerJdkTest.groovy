@@ -2,7 +2,7 @@ package com.sdy.designpatterns.proxy.dynamicproxy
 
 import com.sdy.designpatterns.proxy.BuyHouse
 import com.sdy.designpatterns.proxy.BuyHouseImpl
-import com.sdy.designpatterns.proxy.staticProxy.NoInterface
+import com.sdy.designpatterns.proxy.staticproxy.NoInterface
 import net.sf.cglib.proxy.Enhancer
 import net.sf.cglib.proxy.MethodInterceptor
 import net.sf.cglib.proxy.MethodProxy
@@ -40,9 +40,9 @@ class DynamicProxyHandlerJdkTest extends Specification {
         def proxy = (NoInterface)Enhancer.create(noInterface.getClass(), new MethodInterceptor() {
             @Override
             Object intercept(Object o, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {
-                println("代理：买房前")
+                println("代理：前")
                 Object obj = method.invoke(noInterface, args);
-                println("代理：买房后")
+                println("代理：后")
                 return obj
             }
         })
