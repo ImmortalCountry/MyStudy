@@ -1,4 +1,4 @@
-package com.sdy.designpatterns.proxy.dynamicProxy;
+package com.sdy.designpatterns.proxy.dynamicproxy;
 
 /**
  * @author: sundy

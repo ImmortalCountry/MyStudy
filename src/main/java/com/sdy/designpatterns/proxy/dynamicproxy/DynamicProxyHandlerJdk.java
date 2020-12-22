@@ -1,4 +1,4 @@
-package com.sdy.designpatterns.proxy.dynamicProxy;
+package com.sdy.designpatterns.proxy.dynamicproxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

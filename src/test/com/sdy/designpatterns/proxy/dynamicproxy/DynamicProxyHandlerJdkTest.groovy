@@ -1,4 +1,4 @@
-package com.sdy.designpatterns.proxy.dynamicProxy
+package com.sdy.designpatterns.proxy.dynamicproxy
 
 import com.sdy.designpatterns.proxy.BuyHouse
 import com.sdy.designpatterns.proxy.BuyHouseImpl
