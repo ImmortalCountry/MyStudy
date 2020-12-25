@@ -6,6 +6,7 @@ package com.sdy.test
  */
 class tt {
     static void main(String[] args) {
-
+        String s2 = new String("sadasdasd")
+        System.out.print(s2==s2.intern())
     }
 }

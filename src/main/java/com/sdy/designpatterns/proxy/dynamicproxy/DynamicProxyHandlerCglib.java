@@ -6,4 +6,5 @@ package com.sdy.designpatterns.proxy.dynamicproxy;
  * @description:
  */
 public class DynamicProxyHandlerCglib {
+
 }
