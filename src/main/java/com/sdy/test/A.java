@@ -6,5 +6,10 @@ package com.sdy.test;
  * @description:
  */
 public class A {
-    String y = "a";
+    public static void main(String[] args) {
+        Boolean v= null;
+        if (v){
+
+        }
+    }
 }

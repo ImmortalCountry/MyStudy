@@ -1,4 +1,4 @@
-package com.sdy.fanxing;
+package com.sdy.generic;
 
 /**
  * @author: SunDeYu
@@ -40,7 +40,6 @@ public class GenericTest<T> {
         for (E e : inputArray) {
             System.out.println(e);
         }
-
     }
 
 }

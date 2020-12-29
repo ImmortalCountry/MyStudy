@@ -1,4 +1,4 @@
-package com.sdy.fanxing;
+package com.sdy.generic;
 
 /**
  * @author: SunDeYu

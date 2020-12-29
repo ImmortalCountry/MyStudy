@@ -1,4 +1,6 @@
-package com.sdy.fanxing;
+package com.sdy.generic;
+
+import com.sdy.generic.Generator;
 
 /**
  * @author: SunDeYu
