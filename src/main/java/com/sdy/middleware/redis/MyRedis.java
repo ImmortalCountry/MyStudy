@@ -1,4 +1,4 @@
-package com.sdy.redis;
+package com.sdy.middleware.redis;
 
 import redis.clients.jedis.Jedis;
 

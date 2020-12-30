@@ -1,4 +1,4 @@
-package com.sdy.zookeeper.lock;
+package com.sdy.middleware.zookeeper.lock;
 
 import org.apache.zookeeper.KeeperException;
 

@@ -1,4 +1,4 @@
-package com.sdy.zookeeper.example;
+package com.sdy.middleware.zookeeper.example;
 
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;

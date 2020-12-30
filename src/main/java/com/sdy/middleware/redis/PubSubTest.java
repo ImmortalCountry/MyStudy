@@ -1,6 +1,5 @@
-package com.sdy.redis;
+package com.sdy.middleware.redis;
 
-import com.sdy.design.eventbus.Subscribe;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPubSub;
 

@@ -1,4 +1,4 @@
-package com.sdy.zookeeper.configcenter1;
+package com.sdy.middleware.zookeeper.configcenter1;
 
 import lombok.extern.slf4j.Slf4j;
 import org.I0Itec.zkclient.IZkDataListener;

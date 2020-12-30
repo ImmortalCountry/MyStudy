@@ -1,7 +1,5 @@
-package com.sdy.redis;
+package com.sdy.middleware.redis;
 
-import com.google.common.collect.Lists;
-import com.sun.org.apache.regexp.internal.RE;
 import redis.clients.jedis.Jedis;
 
 import java.util.*;

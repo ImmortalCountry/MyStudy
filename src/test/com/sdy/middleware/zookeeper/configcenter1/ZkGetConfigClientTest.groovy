@@ -1,4 +1,4 @@
-package com.sdy.zookeeper.configcenter1
+package com.sdy.middleware.zookeeper.configcenter1
 
 import spock.lang.Specification
 

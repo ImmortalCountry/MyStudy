@@ -1,6 +1,5 @@
-package com.sdy.zookeeper.lock;
+package com.sdy.middleware.zookeeper.lock;
 
-import com.sdy.thread.threadpool.MyRunnable;
 import lombok.SneakyThrows;
 
 import java.util.concurrent.ArrayBlockingQueue;

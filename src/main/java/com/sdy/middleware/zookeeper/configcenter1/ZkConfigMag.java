@@ -1,7 +1,6 @@
-package com.sdy.zookeeper.configcenter1;
+package com.sdy.middleware.zookeeper.configcenter1;
 
 import org.I0Itec.zkclient.ZkClient;
-import org.apache.zookeeper.ZooKeeper;
 
 /**
  * @author: sundy
