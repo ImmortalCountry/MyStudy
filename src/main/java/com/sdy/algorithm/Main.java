@@ -19,6 +19,7 @@ public class Main {
         Question.ListNode temp2 = new Question.ListNode(3);
         temp1.next = temp2;
 
+
         System.out.println("链表反转： " + question.ReverseLinkedList(head));
 
     }

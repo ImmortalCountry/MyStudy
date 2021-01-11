@@ -21,6 +21,7 @@ public class Question {
             third = first + second;
             first = second;
             second = third;
+
         }
         return third;
     }
