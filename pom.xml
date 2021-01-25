@@ -18,7 +18,14 @@
             <artifactId>rocketmq-client</artifactId>
             <version>4.3.0</version>
         </dependency>
-<!--        <dependency>-->
+        <!-- https://mvnrepository.com/artifact/com.caucho/hessian -->
+        <dependency>
+            <groupId>com.caucho</groupId>
+            <artifactId>hessian</artifactId>
+            <version>4.0.38</version>
+        </dependency>
+
+        <!--        <dependency>-->
 <!--            <groupId>org.apache.rocketmq</groupId>-->
 <!--            <artifactId>rocketmq-acl</artifactId>-->
 <!--            <version>4.7.1</version>-->
@@ -35,6 +42,13 @@
             <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>
             <version>0.10</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.55.Final</version>
+            <scope>compile</scope>
         </dependency>
 
 
