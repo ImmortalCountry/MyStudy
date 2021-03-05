@@ -1,5 +1,7 @@
 package com.sdy.task;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.Executor;
@@ -26,6 +28,7 @@ public class TimeTask {
                 while (true) {
                     // todo run task
                     System.out.println("run task");
+                    List<String> list = new ArrayList<>();
                     try {
                         Thread.sleep(timeInterval);
                     } catch (InterruptedException e) {
@@ -54,12 +57,7 @@ public class TimeTask {
     }
 
     public static void task3() {
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("run task");
-            }
-        };
+        Runnable runnable = () -> System.out.println("run task");
         ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
         service.scheduleAtFixedRate(runnable, 3, 1, TimeUnit.SECONDS);
 //        service.schedule(runnable, 2, TimeUnit.SECONDS);

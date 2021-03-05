@@ -37,6 +37,7 @@ public class ThreadPoolExecutorTest {
         executor.shutdown();
         while (!executor.isTerminated()) {
         }
+        executor.getActiveCount();
         System.out.println("Finished all threads");
     }
 }
